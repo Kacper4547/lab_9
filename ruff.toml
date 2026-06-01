@@ -1,0 +1,11 @@
+[lint]
+select = ["ALL"]
+ignore = [
+    "T201", # Zezwalaj na print()
+    "D100", "D101", "D102", "D103", "D104", "D107", # Ignoruj brak docstringów
+    "COM812", # Ignoruj konflikt przecinków z formatterem
+    "ISC001", # Ignoruj konflikt konkatenacji stringów
+    "FBT001", "FBT002", "FBT003", # Zezwalaj na booleany w funkcjach
+    "ANN001", "ANN201", "ANN002", "ANN003", # Ignoruj brak typowania
+    "F841", # Zezwalaj na nieużywane zmienne (niezbędne w testach wyłapujących błędy)
+]
